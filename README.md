@@ -1,5 +1,8 @@
 # rate-cv
 
+[![Claude skill](https://img.shields.io/badge/Claude-skill-8A2BE2.svg)](https://docs.claude.com/en/docs/claude-code/skills)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 A Claude Code [skill](https://docs.claude.com/en/docs/claude-code/skills) that rates and critiques a CV/resume: it scores the document out of 100 against a weighted engineering-leadership rubric, checks ATS parse-ability, quantified impact, and AI-slop, and can match the CV to a specific job description with a keyword gap list.
 
 The score is a sanity check, not truth. Real ATS platforms don't emit a score a recruiter sees, and commercial checkers disagree by ~20 points on the same file. So the skill leads with an auditable per-category breakdown and specific, coaching-framed fixes, not just a number.
