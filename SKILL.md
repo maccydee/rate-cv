@@ -5,6 +5,13 @@ description: Rate and critique a CV/resume. Scores it out of 100 against a weigh
 
 # rate-cv
 
+**Read the CV's field before scoring.** The rubric is weighted for leadership
+CVs in any profession: 47 of the 100 points are domain-neutral and the rest
+have a mapping table for what counts as evidence in engineering, clinical,
+teaching, finance and operations roles. Name the domain you scored against in
+the output. A score produced against a rubric you quietly adapted looks
+comparable to other scores and is not.
+
 Score a CV honestly and specifically, then hand back a number that's auditable and fixes that are actionable. Two modes:
 
 - **Standalone quality** (no JD): how strong is this CV for engineering-leadership roles, and what would raise it.

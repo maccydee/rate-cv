@@ -1,6 +1,16 @@
 # The CV scoring rubric (100 points)
 
-Weighted for **engineering-leadership** CVs, UK market. Built from recruiter scorecards, ATS-vendor guidance, and EM-resume best practice. The mechanical categories are fed by `cv_signals.py`; the judgement categories you score yourself from the extracted text.
+Weighted for **leadership CVs in any field**, UK market. Categories 1-3 (47
+points) are domain-neutral. Categories 4-6 (53 points) are about leading
+people and owning scope, which every profession has, but the *evidence* differs
+by field: a nurse educator's equivalent of "incident ownership" is a serious
+incident review, and their equivalent of "platform serving N req/day" is a
+caseload or a cohort size.
+
+**Read the domain off the CV before you score, name it in the output, and use
+the mapping table under category 4.** Do not silently re-invent the rubric for
+each CV: an unstated adaptation produces a number that looks comparable and
+is not. Built from recruiter scorecards, ATS-vendor guidance, and EM-resume best practice. The mechanical categories are fed by `cv_signals.py`; the judgement categories you score yourself from the extracted text.
 
 Score each category, sum, subtract deductions, clamp to 0–100. Always return a per-category breakdown so the number is auditable — a bare score is useless.
 
@@ -24,19 +34,47 @@ Score each category, sum, subtract deductions, clamp to 0–100. Always return a
 - Bullets follow **Action → Scope → Outcome** (XYZ / "did X, measured by Y, via Z") — 4 (signal: `action_verb_pct` is a proxy)
 - Metrics are credible and traceable, not inflated — 3
 
-### 4. Engineering-leadership signals — 28 pts (the decisive block)
-People & talent (10): team size + growth stated; promotions/mentoring/retention; hiring/interview ownership.
-Delivery & execution (9): velocity/quality/reliability metrics; roadmap & OKR delivery; incident ownership.
-Strategic & org impact (9): tech-debt/architecture calls; process & culture (OKRs, on-call, standards, DX); **business impact linked to £/revenue/cost**.
+### 4. Leadership signals — 28 pts (the decisive block)
+
+**People & talent (10):** team or cohort size stated with growth; developing
+others, with evidence (promotions, progression, retention, qualification
+pass rates); ownership of recruitment or selection.
+
+**Delivery & execution (9):** measured outcomes in the field's own units;
+delivery against a plan or cycle; ownership when things go wrong.
+
+**Strategic & org impact (9):** decisions that changed how the organisation
+works, not just what it produced; standards, process or policy they set;
+**impact tied to money, risk, or a regulated outcome**.
+
+What counts as evidence, by field:
+
+| | Delivery measured as | Ownership when it goes wrong | Strategic impact |
+|---|---|---|---|
+| Engineering | velocity, quality, reliability | incident command, on-call | architecture and tech-debt calls, DX |
+| Clinical / nursing | caseload, cohort size, audit results, competency sign-offs | serious incident review, safeguarding escalation | policy or guideline authorship, CQC or accreditation outcomes |
+| Teaching | cohort outcomes, progress measures, intervention results | safeguarding, behaviour escalation | curriculum design, whole-school policy |
+| Finance / accounting | close cycle time, variance, audit findings | control failures, remediation | policy, controls framework, systems change |
+| Operations | throughput, cost per unit, SLA | escalation ownership, root cause | process redesign, supplier or contract strategy |
+
+If a field is not listed, name the equivalents explicitly in your output before
+scoring, so the reader can see what you counted.
 
 ### 5. Seniority & scope — 15 pts
-- Clear IC→EM→(senior) progression — 4
-- Explicit scope ownership (headcount, budget, product area, discipline) — 4
-- Domain depth shown concretely ("platform serving N req/day") — 4
-- Relevant education/certs (or strong experience substitute) — 3
+- Clear progression into and through leadership (practitioner → lead → senior),
+  whatever the field's ladder is called — 4
+- Explicit scope ownership: headcount, budget, caseload, department, site,
+  discipline — 4
+- Domain depth shown concretely, in the field's own units ("platform serving
+  N req/day", "18-bed paediatric HDU", "£40m portfolio", "cohort of 240") — 4
+- Relevant qualifications, registration or certification where the field
+  requires it (NMC PIN, QTS, ACA/CIMA, chartership), or a strong experience
+  substitute where it does not — 3
 
 ### 6. Role fit & communication — 10 pts
-- People/process/strategy bias (not all-IC-code) for an EM role — 4
+- Bias matches the role applied for: a leadership CV that reads as pure
+  hands-on practice is a mismatch, and so is a practitioner CV that has lost
+  all clinical or technical credibility — 4
 - Cross-functional collaboration (Product, Exec, other functions) — 3
 - Clear, jargon-controlled writing — 3
 
