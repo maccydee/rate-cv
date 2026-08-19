@@ -1,6 +1,6 @@
 ---
 name: rate-cv
-description: Rate and critique a CV/resume. Scores it out of 100 against a weighted engineering-leadership rubric, checks ATS parse-ability, quantified impact, and AI-slop, and can match it to a specific job description with a keyword gap list. Use this whenever the user wants a CV or resume rated, scored, graded, reviewed, critiqued, checked against ATS, or matched to a job posting, and also when they ask to improve, tighten, or sanity-check a CV even if they don't literally say "rate". Works on .docx and .txt; pass a job description too for a targeted match.
+description: Rate and critique a CV/resume. Scores it out of 100 against a weighted leadership rubric that adapts to the CV's field (engineering, clinical, teaching, finance, operations), checks ATS parse-ability, quantified impact, and AI-slop, and can match it to a specific job description with a keyword gap list. Use this whenever the user wants a CV or resume rated, scored, graded, reviewed, critiqued, checked against ATS, or matched to a job posting, and also when they ask to improve, tighten, or sanity-check a CV even if they don't literally say "rate". Works on .docx and .txt; pass a job description too for a targeted match.
 ---
 
 # rate-cv
