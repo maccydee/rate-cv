@@ -6,7 +6,7 @@ description: Rate and critique a CV/resume. Scores it out of 100 against a weigh
 # rate-cv
 
 **Read the CV's field before scoring.** The rubric is weighted for leadership
-CVs in any profession: 47 of the 100 points are domain-neutral and the rest
+CVs in any profession: 55 of the 100 points are domain-neutral and the rest
 have a mapping table for what counts as evidence in engineering, clinical,
 teaching, finance and operations roles. Name the domain you scored against in
 the output. A score produced against a rubric you quietly adapted looks
@@ -43,11 +43,11 @@ The number is a sanity check, not truth — real ATS platforms don't emit a scor
 
 4. **Read the extracted text yourself** and score the judgement categories in `references/rubric.md` (leadership signals, impact specificity, seniority, fit) that no script can measure. Use `references/craft.md` for what earns vs loses points and for the bullet formulas (XYZ / Verb-Action-Result). The mechanical categories come straight from the signals.
 
-5. **Compute the score.** Sum the six categories, apply deductions (cap −15), clamp 0–100. Map to a band.
+5. **Compute the score.** Sum the seven categories, apply deductions (cap −15), clamp 0–100. Map to a band.
 
 6. **Report** in this order:
-   - **Score /100 and band**, with a one-line "what this means / doesn't mean".
-   - **Category breakdown** table (points earned / max, one phrase each).
+   - **Score /100, the currency element from category 7, and the band**, on one line: `72/100 · currency 3/8 · qualified`, with a one-line "what this means / doesn't mean". Currency travels with the score rather than sitting inside it, because it is the element most likely to decide the outcome and least likely to be read if it is buried: a marketing CV with a three-and-a-half year break and three retired platforms on it scored 94/100 "shortlist-strong" while the same report's own notes said the fit was much weaker.
+   - **Category breakdown** table (points earned / max, one phrase each). Take the numbers from the signals script rather than retyping them: a report once printed "62% of bullets carry a metric" against a script that said 81%, having transposed the action-verb figure, which makes the breakdown unauditable and the whole score suspect.
    - **Top 3 strengths** — concrete, quoting the CV.
    - **Top 3–5 fixes** — specific and coaching-framed ("add team size to the Deloitte role", not "improve leadership signals"), each with the points it would recover. If you propose a reworded bullet, make it truthful and em-dash-free.
    - **If JD supplied:** a separate **JD match** block — keyword match %, the missing keywords worth adding *if truthful*, and a met/partial/gap read on the JD's core must-haves. Keep it apart from the rubric score.
