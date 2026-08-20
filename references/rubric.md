@@ -36,7 +36,13 @@ Score each category, sum, subtract deductions, clamp to 0–100. Always return a
 
 ### 4. Leadership signals — 28 pts (the decisive block)
 
-**People & talent (10):** team or cohort size stated with growth; developing
+**People & talent (10):** for an individual contributor, read this as
+influence rather than headcount: who they trained, whose work they reviewed,
+what they set the standard for. A senior IC with no reports can score here;
+scoring them zero because the rubric expects a team is how a good analyst
+looks like a weak leader.
+
+Team or cohort size stated with growth; developing
 others, with evidence (promotions, progression, retention, qualification
 pass rates); ownership of recruitment or selection.
 
@@ -56,6 +62,8 @@ What counts as evidence, by field:
 | Teaching | cohort outcomes, progress measures, intervention results | safeguarding, behaviour escalation | curriculum design, whole-school policy |
 | Finance / accounting | close cycle time, variance, audit findings | control failures, remediation | policy, controls framework, systems change |
 | Operations | throughput, cost per unit, SLA | escalation ownership, root cause | process redesign, supplier or contract strategy |
+| Data / analytics | model or report adoption, data quality measures, decision impact | pipeline failures, incorrect numbers shipped | data model or warehouse design, governance and definitions |
+| Fundraising / charity | funds raised, retention, conversion, grant sizes | funder relationships at risk, compliance | case for support, portfolio or channel strategy |
 
 If a field is not listed, name the equivalents explicitly in your output before
 scoring, so the reader can see what you counted.
